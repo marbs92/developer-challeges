@@ -2,7 +2,7 @@
 
 La siguiente es una prueba para evaluar a los postulantes enfocada en desarrollo Android/iOS.
 
-# Introducción
+# Introducción.
 
 Este repositorio contiene una serie de requerimientos, que busca evaluar las capacidades técnicas del candidato con respecto a las principales funciones y responsabilidades que se requieren dentro del área de Desarrollo de Coppel.
 
@@ -15,7 +15,7 @@ Principalmente los siguientes aspectos:
 - Familiaridad con los entornos de desarrollo: Conocimiento y uso de las últimas herramientas que proporciona cada plataforma (Android/iOS).
   - Ej: Android Jetpack, iOS SwiftUI
 
-# Instrucciones previas al desarrollo
+# Instrucciones previas al desarrollo.
 
 1. Se requiere de una cuenta de GitHub para realizar esta prueba.
 2. Antes de comenzar a programar:
@@ -33,14 +33,14 @@ Principalmente los siguientes aspectos:
       2. Enviar el zip como archivo adjunto al correo de contacto que se le haya proporcionado.
 4. En caso de ser necesario se debe incluir instrucciones, llaves de apis de terceros o cualquier otro dato necesario para correr la aplicación en un archivo README.md.
 
-# Aplicación de exploración y búsqueda de elementos.
+# Aplicación de exploración y búsqueda de repositorios en github.
 
 Se requiere crear una aplicación móvil que proporcione las siguientes funciones principales:
 
 - Inicio de sesión.
-- Listado de elementos.
-- Búsqueda de elementos.
-- Visualización de detalles de un elemento.
+- Listado de repositorios.
+- Búsqueda de repositorios.
+- Visualización de detalles de un repositorio.
 
 ## Pantallas
 
@@ -60,14 +60,14 @@ A continuación se presenta el listado de las pantallas y los elementos mínimos
   - Imagen de perfil del dueño
   - Nombre del dueño
   - Nombre del repositorio
-  - descripción del Repositorio
+  - Descripción del repositorio
   - Número de estrellas
   - Lenguaje principal del repositorio
   - Privacidad del repositorio
 
 <img src="./images/mobile_home.jpg" alt="" width="300"/>
 
-### Pantalla de detalle de elementos.
+### Pantalla de detalle de repositorio.
 
 - Nombre del repositorio
 - Tamaño en MB
@@ -85,7 +85,7 @@ A continuación se presenta el listado de las pantallas y los elementos mínimos
 2. La aplicación inicia la autenticación mediante github (Firebase).
 3. La aplicación muestra la pantalla principal (Home).
 
-### Visualizar lista de elementos
+### Visualizar listado de repositorios
 
 1. El usuario accede a la página principal.
 2. La aplicación muestra el listado de los repositorios en tendencia en los últimos 7 días.

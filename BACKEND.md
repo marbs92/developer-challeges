@@ -31,7 +31,7 @@ Principalmente los siguientes aspectos:
    2. Entrega por correo:
       1. Crear un archivo comprimido (.zip o .rar) de su proyecto.
       2. Enviar el zip como archivo adjunto al correo de contacto que se le haya proporcionado.
-5. El proyecto deberá ser expuesto mediante una PaaS (heroku, gcloud, aws, ...) y los links correspondientes debran ser incluidos en el archivo README.md
+5. El proyecto deberá ser expuesto mediante una PaaS (heroku, gcloud, aws, ...) y los links correspondientes deberán ser incluidos en la descripción del pull request o en el email donde se entregue el proyecto.
 6. En caso de ser necesario se debe incluir instrucciones, llaves de apis de terceros o cualquier otro dato necesario para correr la aplicación en un archivo README.md.
 
 ## Aplicación TODO
@@ -53,7 +53,7 @@ A continuación se presenta el listado de las pantallas y los elementos mínimos
 - Botón de inicio de sesión.
 - Botón de Login.
 
-<img src="./images/web_login.jpg" alt="" width="500"/>
+<img src="./images/web_login_username_password.jpg" alt="" width="500"/>
 
 ### Pantalla de registro:
 
@@ -74,7 +74,7 @@ A continuación se presenta el listado de las pantallas y los elementos mínimos
     - Botón de borrado.
 - Botón de creación de nueva tarea.
 
-<img src="./images/web_home.jpg" alt="" width="500"/>
+<img src="./images/web_todo_home.jpg" alt="" width="500"/>
 
 ## Casos de uso:
 

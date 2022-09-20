@@ -1,18 +1,8 @@
-# Prueba técnica para postulantes (Frontend)
+# Prueba técnica para postulantes (Frontend web)
 
 La siguiente es una prueba para evaluar a los postulantes enfocada en desarrollo frontend.
 
-# Introducción
-
-Este repositorio contiene una serie de requerimientos, que busca evaluar las capacidades técnicas del candidato con respecto a las principales funciones y responsabilidades que se requieren dentro del área de Desarrollo de Coppel.
-
-## ¿Qué se busca evaluar?
-
-# Prueba técnica para postulantes (Frontend)
-
-La siguiente es una prueba para evaluar a los postulantes enfocada en desarrollo frontend.
-
-# Introducción
+# Introducción.
 
 Este repositorio contiene una serie de requerimientos, que busca evaluar las capacidades técnicas del candidato con respecto a las principales funciones y responsabilidades que se requieren dentro del área de Desarrollo de Coppel.
 
@@ -46,16 +36,16 @@ Principalmente los siguientes aspectos:
       1. Crear un archivo comprimido (.zip o .rar) de su proyecto.
       2. Enviar el zip como archivo adjunto al correo de contacto que se le haya proporcionado.
 
-5. El proyecto deberá ser expuesto mediante una PaaS (heroku, gcloud, aws, ...) y los links correspondientes debran ser incluidos en el archivo README.md
+5. El proyecto deberá ser expuesto mediante una PaaS (heroku, gcloud, aws, ...) y los links correspondientes deberán ser incluidos en la descripción del pull request o en el email donde se entregue el proyecto.
 6. En caso de ser necesario se debe incluir instrucciones, llaves de apis de terceros o cualquier otro dato necesario para correr la aplicación en un archivo README.md.
 
-# Aplicación de exploración y búsqueda de elementos.
+# Aplicación de exploración y búsqueda de repositorios en github.
 
 Se requiere crear una aplicación móvil que proporcione las siguientes funciones principales:
 
 - Inicio de sesión.
-- Listado de elementos.
-- Búsqueda de elementos.
+- Listado de repositorios.
+- Búsqueda de repositorios.
 - Visualización de detalles de un elemento.
 
 ## Pantallas
@@ -66,7 +56,7 @@ A continuación se presenta el listado de las pantallas y los elementos mínimos
 
 - Botón de inicio de sesión.
 
-<img src="./images/mobile_login.jpg" alt="" width="300"/>
+<img src="./images/web_login_button.jpg" alt="" width="500"/>
 
 ### Pantalla principal:
 
@@ -81,9 +71,9 @@ A continuación se presenta el listado de las pantallas y los elementos mínimos
   - Lenguaje principal del repositorio
   - Privacidad del repositorio
 
-<img src="./images/mobile_home.jpg" alt="" width="300"/>
+<img src="./images/web_github_home.jpg" alt="" width="500"/>
 
-### Pantalla de detalle de elementos.
+### Pantalla de detalle de repositorio.
 
 - Nombre del repositorio
 - Tamaño en MB
@@ -91,7 +81,7 @@ A continuación se presenta el listado de las pantallas y los elementos mínimos
 - Tags asociadas (máximo 4 tags)
 - Contenido del archivo README.md
 
-<img src="./images/mobile_details.jpg" alt="" width="300"/>
+<img src="./images/web_github_details.jpg" alt="" width="500"/>
 ## Casos de Uso
 
 ### Login
@@ -100,24 +90,24 @@ A continuación se presenta el listado de las pantallas y los elementos mínimos
 2. La aplicación inicia la autenticación mediante github (Firebase).
 3. La aplicación muestra la pantalla principal (Home).
 
-### Visualizar lista de elementos
+### Visualizar listado de repositorios.
 
 1. El usuario accede a la página principal.
 2. La aplicación muestra el listado de los repositorios en tendencia en los últimos 7 días.
 
-### Visualizar más elementos del listado
+### Visualizar más elementos del listado.
 
 1. El usuario en la página principal hace scroll hacia abajo hasta llegar al último elemento del scroll.
 2. La aplicación obtendrá la lista de los siguientes elementos a mostrar y con estos actualiza la lista.
 
-### Búsqueda por nombre
+### Búsqueda por nombre.
 
 1. El usuario en la pantalla principal introduce parámetros en el input de búsqueda.
 2. El usuario da click al botón de búsqueda.
 3. La aplicación obtiene los elementos con base en el input del usuario.
 4. La aplicación actualiza el listado con los elementos obtenidos.
 
-### Visualizar detalles de un elemento
+### Visualizar detalles de un repositorio
 
 1. El usuario en la pantalla principal da click a un elemento del listado.
 2. La aplicación obtendrá los datos del elemento y mostrará estos datos en la pantalla de detalles.
