@@ -1,4 +1,4 @@
-# Prueba técnica para postulantes (Android/iOS)
+# Prueba técnica para postulantes del área de Desarrollo de Coppel.
 
 La siguiente es una prueba para evaluar a los postulantes.
 
