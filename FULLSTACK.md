@@ -4,7 +4,7 @@ La siguiente es una prueba para evaluar a los postulantes enfocada en desarrollo
 
 # Introducción
 
-Este repositorio contiene una serie de requerimientos, que buscan evaluar las capacidades técnicas del candidato con respecto a las principales funciones y responsabilidades que se requieren dentro del área de desarrollo de grupo Coppel.
+A continuación se presentarán una serie de requerimientos que buscan evaluar las capacidades técnicas del candidato con respecto a las principales funciones y responsabilidades que se requieren dentro del área de Desarrollo de Coppel.
 
 ## ¿Qué se busca evaluar?
 
@@ -16,14 +16,12 @@ Principalmente los siguientes aspectos:
 
 # Instrucciones previas al desarrollo
 
-1. Se requiere de una cuenta de GitHub para realizar esta prueba.
-2. La prueba debe ser realizada preferentemente con python o javascript.
-3. Antes de comenzar a programar:
-   1. Realice un Fork de este repositorio.
+1. Antes de comenzar a programar:
+   1. Realice un Fork de este repositorio (https://github.com/Coppel-CDMX/developer-challeges).
    2. Clone el fork a su máquina local.
    3. Cree una rama con su nombre completo en su repositorio local.
       - ej: git checkout -b ERNESTO_HERNANDEZ_CHAVEZ
-4. Al finalizar, existen 2 (dos) opciones para entregar su proyecto:
+2. Al finalizar, existen 2 (dos) opciones para entregar su proyecto:
    1. [Pull Pequest](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork):
       1. Hacer un push de su rama local a github.
       2. Crear un Pull Request de la rama con su NOMBRE al repositorio de origen.
@@ -31,8 +29,8 @@ Principalmente los siguientes aspectos:
    2. Entrega por correo:
       1. Crear un archivo comprimido (.zip o .rar) de su proyecto.
       2. Enviar el zip como archivo adjunto al correo de contacto que se le haya proporcionado.
-5. El proyecto deberá ser expuesto mediante una PaaS (heroku, gcloud, aws, ...) y los links correspondientes deberán ser incluidos en la descripción del pull request o en el email donde se entregue el proyecto.
-6. En caso de ser necesario se debe incluir instrucciones, llaves de apis de terceros o cualquier otro dato necesario para correr la aplicación en un archivo README.md.
+3. El proyecto deberá ser expuesto mediante una PaaS (heroku, gcloud, aws, ...) y los links correspondientes deberán ser incluidos en la descripción del pull request o en el correo donde se entregue el proyecto.
+4. Incluir en el archivo README.md instrucciones, llaves de apis de terceros o cualquier otro dato necesario para correr la aplicación.
 
 ## Aplicación TODO
 
@@ -132,7 +130,7 @@ A continuación se presenta el listado de las pantallas y los elementos mínimos
 
 ## Consideraciones generales
 
-- Tanto el backend como el frontend deben estar alojados en una plataforma com servicio
+- Tanto el backend como el frontend deben estar alojados en una PaaS
 
 ## Consideraciones para el backend
 

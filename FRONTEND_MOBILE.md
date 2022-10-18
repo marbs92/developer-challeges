@@ -4,7 +4,7 @@ La siguiente es una prueba para evaluar a los postulantes enfocada en desarrollo
 
 # Introducción.
 
-Este repositorio contiene una serie de requerimientos, que busca evaluar las capacidades técnicas del candidato con respecto a las principales funciones y responsabilidades que se requieren dentro del área de Desarrollo de Coppel.
+A continuación se presentarán una serie de requerimientos que buscan evaluar las capacidades técnicas del candidato con respecto a las principales funciones y responsabilidades que se requieren dentro del área de Desarrollo de Coppel.
 
 ## ¿Qué se busca evaluar?
 
@@ -17,13 +17,15 @@ Principalmente los siguientes aspectos:
 
 # Instrucciones previas al desarrollo.
 
-1. Se requiere de una cuenta de GitHub para realizar esta prueba.
-2. Antes de comenzar a programar:
-   1. Realice un Fork de este repositorio.
+1. Antes de comenzar a programar:
+
+   1. Realice un Fork de este repositorio (https://github.com/Coppel-CDMX/developer-challeges).
    2. Clone el fork a su máquina local.
    3. Cree una rama con su nombre completo en su repositorio local.
       - ej: git checkout -b ERNESTO_HERNANDEZ_CHAVEZ
-3. Al finalizar, existen 2 (dos) opciones para entregar su proyecto:
+
+2. Al finalizar, existen 2 (dos) opciones para entregar su proyecto:
+
    1. [Pull Pequest](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork):
       1. Hacer un push de su rama local a github.
       2. Crear un Pull Request de la rama con su NOMBRE al repositorio de origen.
@@ -31,7 +33,8 @@ Principalmente los siguientes aspectos:
    2. Entrega por correo:
       1. Crear un archivo comprimido (.zip o .rar) de su proyecto.
       2. Enviar el zip como archivo adjunto al correo de contacto que se le haya proporcionado.
-4. En caso de ser necesario se debe incluir instrucciones, llaves de apis de terceros o cualquier otro dato necesario para correr la aplicación en un archivo README.md.
+
+3. Incluir en el archivo README.md instrucciones, llaves de apis de terceros o cualquier otro dato necesario para correr la aplicación.
 
 # Aplicación de exploración y búsqueda de repositorios en github.
 

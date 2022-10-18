@@ -17,16 +17,14 @@ Principalmente los siguientes aspectos:
 
 # Instrucciones previas al desarrollo
 
-1. Se requiere de una cuenta de GitHub para realizar esta prueba.
-2. La prueba debe ser realizada preferentemente con Angular o React.
-3. Antes de comenzar a programar:
+1. Antes de comenzar a programar:
 
-   1. Realice un Fork de este repositorio.
+   1. Realice un Fork de este repositorio (https://github.com/Coppel-CDMX/developer-challeges).
    2. Clone el fork a su máquina local.
    3. Cree una rama con su nombre completo en su repositorio local.
       - ej: git checkout -b ERNESTO_HERNANDEZ_CHAVEZ
 
-4. Al finalizar, existen 2 (dos) opciones para entregar su proyecto:
+2. Al finalizar, existen 2 (dos) opciones para entregar su proyecto:
 
    1. [Pull Pequest](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork):
       1. Hacer un push de su rama local a github.
@@ -36,8 +34,8 @@ Principalmente los siguientes aspectos:
       1. Crear un archivo comprimido (.zip o .rar) de su proyecto.
       2. Enviar el zip como archivo adjunto al correo de contacto que se le haya proporcionado.
 
-5. El proyecto deberá ser expuesto mediante una PaaS (heroku, gcloud, aws, ...) y los links correspondientes deberán ser incluidos en la descripción del pull request o en el email donde se entregue el proyecto.
-6. En caso de ser necesario se debe incluir instrucciones, llaves de apis de terceros o cualquier otro dato necesario para correr la aplicación en un archivo README.md.
+3. El proyecto deberá ser expuesto mediante una PaaS (heroku, gcloud, aws, ...) y los links correspondientes deberán ser incluidos en la descripción del pull request o en el correo donde se entregue el proyecto.
+4. Incluir en el archivo README.md instrucciones, llaves de apis de terceros o cualquier otro dato necesario para correr la aplicación.
 
 # Aplicación de exploración y búsqueda de repositorios en github.
 
@@ -82,6 +80,7 @@ A continuación se presenta el listado de las pantallas y los elementos mínimos
 - Contenido del archivo README.md
 
 <img src="./images/web_github_details.jpg" alt="" width="500"/>
+
 ## Casos de Uso
 
 ### Login
