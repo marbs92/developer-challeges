@@ -3,4 +3,13 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="login_github">Login GitHub</string>
+    <string name="search">Search</string>
+    <string name="not_found">No se encontraron resultados</string>
+    <string name="owner_name">Owner name
+    </string>
+    <string name="description">Description</string>
+    <string name="number_0">0</string>
+    <string name="undefined">Undefined</string>
+    <string name="public_text">PUBLIC</string>
+    <string name="repository_name">Repository Name</string>
 </resources>
