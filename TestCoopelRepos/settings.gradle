@@ -14,3 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "TestCoopelRepos"
 include ':app'
+include ':core'
+include ':data'
+include ':domain'
+include ':usescases'
