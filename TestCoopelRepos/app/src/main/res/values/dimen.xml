@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    Font weight-->
+    <integer name="font_weight_extra_light">100</integer>
+    <integer name="font_weight_light">200</integer>
+    <integer name="font_weight_regular">300</integer>
+    <integer name="font_weight_normal">400</integer>
+    <integer name="font_weight_medium">500</integer>
+    <integer name="font_weight_bold">700</integer>
+    <integer name="font_weight_black">900</integer>
+
+<!--    Font size-->
+    <dimen name="font_size_56">56sp</dimen>
+    <dimen name="font_size_48">48sp</dimen>
+    <dimen name="font_size_32">32sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_10">10sp</dimen>
+
+    <!--    line height-->
+    <dimen name="line_56">56dp</dimen>
+    <dimen name="line_48">48dp</dimen>
+    <dimen name="line_46">46dp</dimen>
+    <dimen name="line_44">44dp</dimen>
+    <dimen name="line_42">42dp</dimen>
+    <dimen name="line_38">38dp</dimen>
+    <dimen name="line_36">36dp</dimen>
+    <dimen name="line_32">32dp</dimen>
+    <dimen name="line_28">28dp</dimen>
+    <dimen name="line_26">26dp</dimen>
+    <dimen name="line_24">24dp</dimen>
+    <dimen name="line_22">22dp</dimen>
+    <dimen name="line_20">20dp</dimen>
+    <dimen name="line_18">18dp</dimen>
+    <dimen name="line_16">16dp</dimen>
+    <dimen name="line_14">14dp</dimen>
+    <dimen name="line_12">12dp</dimen>
+    <dimen name="line_10">10dp</dimen>
+    <dimen name="line_8">8dp</dimen>
+    <dimen name="line_6">6dp</dimen>
+    <dimen name="line_4">4dp</dimen>
+    <dimen name="line_2">2dp</dimen>
+
+    <!--    line height percent-->
+    <dimen name="line_height_percent_160">160%</dimen>
+    <dimen name="line_height_percent_140">140%</dimen>
+
+
+</resources>
