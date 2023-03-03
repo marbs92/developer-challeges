@@ -28,7 +28,8 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
     private fun setupView() {
         binding.apply {
             btnLogin.setOnClickListener {
-
+                val action = LoginFragmentDirections.actionLoginFragmentToHomeFragment()
+                findNavController().navigate(action)
             }
         }
     }
