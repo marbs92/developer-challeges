@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "38869119910",
+    "project_id": "testcoopelrepos",
+    "storage_bucket": "testcoopelrepos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38869119910:android:f0798eb5635d13f30c9567",
+        "android_client_info": {
+          "package_name": "com.example.testcoopelrepos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38869119910-88co9umg82m41thel64dro7g1kgrsg44.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg8-rVdpF2oGXOXMpWhplF-YlBJZ7zQOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38869119910-88co9umg82m41thel64dro7g1kgrsg44.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
