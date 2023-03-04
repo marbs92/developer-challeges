@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "38869119910-2jtd7o9osd5ecujqhu07khmv4r7qed90.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.testcoopelrepos",
+            "certificate_hash": "fb11229300bae228f6ecfd3ba0a848ac1931a06a"
+          }
+        },
+        {
           "client_id": "38869119910-88co9umg82m41thel64dro7g1kgrsg44.apps.googleusercontent.com",
           "client_type": 3
         }
