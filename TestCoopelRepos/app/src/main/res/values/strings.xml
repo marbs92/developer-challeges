@@ -13,4 +13,6 @@
     <string name="public_text">PUBLIC</string>
     <string name="repository_name">Repository Name</string>
     <string name="error_message">Ocurrió un problema al realizar la operación</string>
+    <string name="branch">Branch: %s</string>
+    <string name="size">Size: %s MB</string>
 </resources>

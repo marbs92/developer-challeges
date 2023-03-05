@@ -22,5 +22,18 @@
         android:id="@+id/homeFragment"
         android:name="com.example.testcoopelrepos.home.fragment.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailRepoFragment"
+            app:destination="@id/detailRepoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailRepoFragment"
+        android:name="com.example.testcoopelrepos.detailRepo.fragments.DetailRepoFragment"
+        android:label="fragment_detail_repo"
+        tools:layout="@layout/fragment_detail_repo" />
 </navigation>
