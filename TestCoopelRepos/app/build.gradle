@@ -22,6 +22,9 @@ android {
     }
 
     buildTypes {
+        debug {
+
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -65,4 +68,11 @@ dependencies {
     // hilt
     implementation "com.google.dagger:hilt-android:$dagger_hilt_version"
     kapt "com.google.dagger:hilt-compiler:$dagger_hilt_version"
+
+
+    //paging
+    implementation "androidx.paging:paging-runtime:$paging_version"
+
+    //Coil
+    implementation "io.coil-kt:coil:$coil_version"
 }
