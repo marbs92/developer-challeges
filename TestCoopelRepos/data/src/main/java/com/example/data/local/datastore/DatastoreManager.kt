@@ -18,6 +18,7 @@ class DataStoreManager @Inject constructor(
         name = "general_data_user"
     )
 
+    // TODO arreglar modo de guardar en datastore
     private val myVariableKey = stringPreferencesKey("local_pref")
 
     suspend fun saveMyVariable(myVariable: String) {
