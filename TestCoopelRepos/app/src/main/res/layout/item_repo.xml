@@ -2,13 +2,19 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardItem"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/line_8">
+    android:layout_marginHorizontal="@dimen/line_8"
+    android:layout_marginVertical="@dimen/line_4"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/white"
+    android:foreground="?selectableItemBackgroundBorderless">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="5dp">
 
         <androidx.constraintlayout.widget.Guideline
@@ -16,13 +22,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.7" />
+            app:layout_constraintGuide_percent="0.8" />
+
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/glVertical1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.3" />
+
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/glVertical0"
             android:layout_width="wrap_content"
@@ -34,7 +42,6 @@
             android:id="@+id/imgProfile"
             android:layout_width="0dp"
             android:layout_height="80dp"
-            android:layout_margin="@dimen/line_10"
             app:layout_constraintEnd_toStartOf="@+id/glVertical1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -43,12 +50,10 @@
             android:id="@+id/tittleRepo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginHorizontal="@dimen/line_8"
             android:fontFamily="sans-serif-medium"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="@dimen/font_size_16"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imgProfile"
             app:layout_constraintTop_toTopOf="parent"
@@ -58,31 +63,29 @@
             android:id="@+id/description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:maxLines="3"
+            android:layout_marginHorizontal="@dimen/line_8"
             android:autoSizeMaxTextSize="@dimen/font_size_14"
             android:autoSizeMinTextSize="@dimen/font_size_10"
             android:fontFamily="sans-serif"
+            android:maxLines="3"
             app:layout_constraintBottom_toTopOf="@+id/glHorizontal1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imgProfile"
             app:layout_constraintTop_toBottomOf="@id/tittleRepo"
             app:layout_constraintVertical_bias="0.0"
-            tools:text="@string/description" />
+            tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'" />
 
         <TextView
-            android:id="@+id/newPrice"
+            android:id="@+id/name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/font_size_12"
-            android:gravity="center"
             android:autoSizeMaxTextSize="@dimen/font_size_12"
             android:autoSizeMinTextSize="@dimen/font_size_10"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
             android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_12"
             app:layout_constraintBottom_toTopOf="@+id/glHorizontal1"
             app:layout_constraintEnd_toEndOf="@+id/imgProfile"
             app:layout_constraintStart_toStartOf="@+id/imgProfile"
@@ -92,16 +95,17 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imgStart"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/line_20"
+            android:layout_height="@dimen/line_20"
             android:layout_marginStart="@dimen/line_10"
+            android:tint="@color/purple_700"
             android:src="@android:drawable/star_off"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/glHorizontal1" />
 
         <TextView
-            android:id="@+id/tvNumber"
+            android:id="@+id/number"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
@@ -116,15 +120,15 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imgLanguage"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@mipmap/ic_launcher"
+            android:layout_width="@dimen/line_20"
+            android:layout_height="@dimen/line_20"
+            android:src="@drawable/ic_code"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/glVertical0"
             app:layout_constraintTop_toTopOf="@+id/glHorizontal1" />
 
         <TextView
-            android:id="@+id/tvLanguage"
+            android:id="@+id/language"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
@@ -137,16 +141,17 @@
             tools:text="@string/undefined" />
 
         <TextView
-            android:id="@+id/tvStatus"
+            android:id="@+id/visibility"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:gravity="end"
+            android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="@dimen/font_size_12"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tvLanguage"
+            app:layout_constraintStart_toEndOf="@+id/language"
             app:layout_constraintTop_toTopOf="@+id/glHorizontal1"
             tools:text="@string/public_text" />
 
