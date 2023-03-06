@@ -17,7 +17,14 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField "String","BASE_URL",'"https://api.github.com/"'
+            buildConfigField "String","GITHUB_TOKEN", GITHUB_TOKEN
+
+        }
         release {
+            buildConfigField "String","BASE_URL",'"https://api.github.com/"'
+            buildConfigField "String","GITHUB_TOKEN", GITHUB_TOKEN
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -56,4 +63,11 @@ dependencies {
 
     //Logging Interceptor
     implementation "com.squareup.okhttp3:logging-interceptor:$logging_interceptor_version"
+
+    //DataStore
+    implementation "androidx.datastore:datastore:$datastore"
+    implementation "com.google.protobuf:protobuf-javalite:$protobuf_javalite_version"
+    implementation "androidx.datastore:datastore-preferences:1.0.0-alpha05"
+    implementation "androidx.datastore:datastore-preferences-core:$datastore"
+
 }

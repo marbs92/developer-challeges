@@ -22,9 +22,12 @@ plugins {
 }
 
 project.ext {
+    coil_version = "1.4.0"
+    datastore = "1.0.0"
+    datastore_preferences = "1.0.0"
     dagger_hilt_version = "2.44"
-    retrofit2_version = "2.9.0"
     logging_interceptor_version = "4.9.1"
     paging_version = "3.1.1"
-    coil_version = "1.4.0"
+    protobuf_javalite_version = "3.10.0"
+    retrofit2_version = "2.9.0"
 }
