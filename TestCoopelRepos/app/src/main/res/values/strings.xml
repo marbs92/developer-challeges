@@ -15,4 +15,6 @@
     <string name="error_message">Ocurrió un problema al realizar la operación</string>
     <string name="branch">Branch: %s</string>
     <string name="size">Size: %s MB</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="close">Cerrar</string>
 </resources>
