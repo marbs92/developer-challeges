@@ -5,6 +5,7 @@ import com.example.data.network.repository.auth.AuthRepository
 import com.example.data.network.repository.auth.AuthRepositoryImpl
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.OAuthProvider
+import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -13,6 +14,10 @@ import dagger.hilt.components.SingletonComponent
 @InstallIn(SingletonComponent::class)
 @Module
 class AppModule  {
+
+
+    @Provides
+    fun providesGsonBuilder(): GsonBuilder = GsonBuilder()
 
     @Provides
     fun provideOAuth(): OAuthProvider.Builder = OAuthProvider.newBuilder("github.com")

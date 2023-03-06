@@ -3,6 +3,8 @@ package com.example.data.di
 
 import com.example.data.BuildConfig
 import com.example.data.service.GenericServices
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -32,6 +34,10 @@ class NetworkModule {
             .connectTimeout(60, TimeUnit.SECONDS)
             .build()
     }
+    @Provides
+    @Singleton
+    fun provideGson(): Gson = GsonBuilder()
+        .create()
 
 
 
