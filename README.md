@@ -21,3 +21,19 @@ Este repositorio contiene una serie de requerimientos que busca evaluar las capa
    2. Entrega por correo:
       1. Crear un archivo comprimido (.zip o .rar) de su proyecto.
       2. Enviar el zip como archivo adjunto al correo de contacto que se le haya proporcionado.
+
+
+
+
+
+-----------------------------------------------------------------------------------------
+
+# Instrucciones adicionales relacionadas a la ejecución de la app
+
+
+token que debe ser agregado en el gradle-properties
+
+1. GITHUB_TOKEN = "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"
+
+
+2. En caso de que la app no permita hacer un login, favor de proporcionarme el sha1 para yo poderlo agregar en firebase y de esta forma proporcionarles el google-services actualizado 
