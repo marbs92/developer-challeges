@@ -38,7 +38,7 @@ data class GetReposModelItem(
         get() = _homepage ?: ""
 
     val language: String
-        get() = _language ?: ""
+        get() = _language ?: "Undefined"
 
     val name: String
         get() = _name ?: ""
