@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "38869119910",
+    "firebase_url": "https://testcoopelrepos-default-rtdb.firebaseio.com",
     "project_id": "testcoopelrepos",
     "storage_bucket": "testcoopelrepos.appspot.com"
   },
@@ -19,6 +20,14 @@
           "android_info": {
             "package_name": "com.example.testcoopelrepos",
             "certificate_hash": "fb11229300bae228f6ecfd3ba0a848ac1931a06a"
+          }
+        },
+        {
+          "client_id": "38869119910-4k5gele690sjkusnq28dvfi27i0m62tr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.testcoopelrepos",
+            "certificate_hash": "312f621b400815b1fac08a1a459d332ef34a6f91"
           }
         },
         {
