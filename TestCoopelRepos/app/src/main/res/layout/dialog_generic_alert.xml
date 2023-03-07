@@ -33,7 +33,7 @@
             android:gravity="center"
             android:text="@string/app_name"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="@dimen/font_size_20"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imgSharePeople" />
@@ -44,7 +44,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/description"
-            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/font_size_16"
+            android:textColor="@android:color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txtOne" />
