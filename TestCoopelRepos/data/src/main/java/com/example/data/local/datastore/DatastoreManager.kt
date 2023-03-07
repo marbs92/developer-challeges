@@ -1,4 +1,5 @@
 package com.example.data.local.datastore
+
 import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -6,6 +7,7 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.createDataStore
 import dagger.hilt.android.qualifiers.ApplicationContext
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -18,17 +20,27 @@ class DataStoreManager @Inject constructor(
         name = "general_data_user"
     )
 
-    // TODO arreglar modo de guardar en datastore
-    private val myVariableKey = stringPreferencesKey("local_pref")
+    object PreferencesKeys {
+        val name = stringPreferencesKey("name")
+        val username = stringPreferencesKey("username")
+        val urlPhoto = stringPreferencesKey("urlPhoto")
+    }
 
-    suspend fun saveMyVariable(myVariable: String) {
+
+    suspend fun setPreferencesData(name: String?, username: String?, urlPhoto: String?) {
         dataStore.edit { preferences ->
-            preferences[myVariableKey] = myVariable
+            preferences[PreferencesKeys.name] = name ?:""
+            preferences[PreferencesKeys.username] = username ?:""
+            preferences[PreferencesKeys.urlPhoto] = urlPhoto ?:""
         }
     }
 
-    val myVariableFlow = dataStore.data
-        .map { preferences ->
-            preferences[myVariableKey] ?: ""
-        }
+    suspend fun getPreferencesData(): PreferencesData {
+        val preferences = dataStore.data.first()
+        return PreferencesData(
+            preferences[PreferencesKeys.name] ?: "",
+            preferences[PreferencesKeys.username] ?: "",
+            preferences[PreferencesKeys.urlPhoto] ?: ""
+        )
+    }
 }
