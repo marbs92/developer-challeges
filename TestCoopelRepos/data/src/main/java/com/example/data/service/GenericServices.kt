@@ -28,9 +28,7 @@ interface GenericServices {
     @GET("users/{username}/repos")
     fun getRepos(
         @Path("username") username: String,
-        @Header("Authorization") authorization: String,
-        @Query("page") page: Int,
-        @Query("per_page") pageSize: Int
+        @Header("Authorization") authorization: String
     ): Call<List<GetReposResponseModelItem>>
 
 }
