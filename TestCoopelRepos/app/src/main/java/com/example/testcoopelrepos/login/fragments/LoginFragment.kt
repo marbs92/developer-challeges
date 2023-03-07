@@ -1,53 +1,31 @@
 package com.example.testcoopelrepos.login.fragments
 
-import android.os.Bundle
-import android.view.View
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.example.data.generic.Resource
-import com.example.testcoopelrepos.R
+import com.example.testcoopelrepos.basecomponents.BaseFragment
+import com.example.testcoopelrepos.basecomponents.ShowDialog.showDialogInfo
 import com.example.testcoopelrepos.databinding.FragmentLoginBinding
 import com.example.testcoopelrepos.login.viewModel.LoginFragmentViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class LoginFragment : Fragment(R.layout.fragment_login) {
+class LoginFragment :
+    BaseFragment<FragmentLoginBinding, LoginFragmentViewModel>(LoginFragmentViewModel::class) {
+    override fun getViewBinding() = FragmentLoginBinding.inflate(layoutInflater)
 
+    override fun initObservers() {
+        viewModel.loginResult.observe(viewLifecycleOwner) { authUserResult ->
 
-    private lateinit var binding: FragmentLoginBinding
-
-    private val viewModel: LoginFragmentViewModel by viewModels()
-
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        binding = FragmentLoginBinding.bind(view)
-
-        setupView()
-        initObservers()
-    }
-
-    private fun initObservers() {
-        viewModel.loginResult.observe(viewLifecycleOwner) { result ->
-            when(result){
-                is Resource.Failure -> {
-                    // show warning alert
-                }
-                Resource.Loading -> {
-                    // show loader
-                }
-                is Resource.Success -> {
+            authUserResult?.apply {
+                if (authUserResult.status == 200 || authUserResult.data != null){
                     goToHome()
-                }
-                null -> {
-                    // show warning alert
+                }else{
+                    showDialogInfo(requireActivity(), authUserResult.message)
                 }
             }
         }
     }
 
-    private fun setupView() {
+    override fun setupView() {
         binding.apply {
             btnLogin.setOnClickListener {
                 viewModel.doLogin(requireActivity())
@@ -58,5 +36,6 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
     private fun goToHome() {
         val action = LoginFragmentDirections.actionLoginFragmentToHomeFragment()
         findNavController().navigate(action)
+        hideProgressBarCustom()
     }
 }
